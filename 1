@@ -1,0 +1,16 @@
+- Name: faster_rcnn_r50_fpn_16x4_1x_obj365v2
+  In Collection: Faster R-CNN
+  Config: configs/objects365/faster_rcnn_r50_fpn_16x4_1x_obj365v2.py
+  Metadata:
+    Training Memory (GB): 10.8
+    Epochs: 12
+    Training Data: Objects365 v1
+    Training Techniques:
+      - SGD with Momentum
+      - Weight Decay
+  Results:
+  - Task: Object Detection
+    Dataset: Objects365 v2
+    Metrics:
+      box AP: 19.8
+  Weights: https://download.openmmlab.com/mmdetection/v2.0/objects365/faster_rcnn_r50_fpn_16x4_1x_obj365v2/faster_rcnn_r50_fpn_16x4_1x_obj365v2_20221220_175040-5910b015.pth
